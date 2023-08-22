@@ -80,7 +80,7 @@ public class SecurityConfiguration {
         ));
 
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PATCH", "DELETE"));// 지정한 요청에 대한 Http Method에 대한 통신 허용
-        configuration.setAllowedHeaders(Arrays.asList("*"));
+        configuration.setAllowedHeaders(Arrays.asList("*"));    // 단일 일자 받고 있어서 경고 메시지 나옴
         configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
